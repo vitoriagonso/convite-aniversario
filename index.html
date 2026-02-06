@@ -24,13 +24,15 @@ h1{
   color: #ff4b6e;
 }
 
-button{
+a.vou, a.nao-vou{
+  display: inline-block;
   padding: 10px 20px;
-  border: none;
   border-radius: 10px;
   font-size: 16px;
   margin: 10px;
   cursor: pointer;
+  text-decoration: none;
+  color: white;
 }
 
 .vou{
@@ -57,18 +59,10 @@ button{
 
   <h3>Você vai?</h3>
 
-  <button class="vou" onclick="confirmar('Vou!')">Vou</button>
-  <button class="nao-vou" onclick="confirmar('Não vou 😢')">Não vou</button>
+<a class="vou" 
+   href="https://wa.me/5538998963169?text=Oi%20Camilli!%20Confirmo%20presença%20no%20seu%20aniversário%20🎉"
+   target="_blank">Vou</a>
 
-  <p id="resposta"></p>
-</div>
-
-<script>
-function confirmar(opcao){
-  document.getElementById("resposta").innerText =
-    "Resposta registrada: " + opcao;
-}
-</script>
-
-</body>
-</html>
+<a class="nao-vou" 
+   href="https://wa.me/5538998963169?text=Oi%20Camilli!%20Infelizmente%20não%20vou%20conseguir%20ir%20😢"
+   target="_blank">Não vou</a>
